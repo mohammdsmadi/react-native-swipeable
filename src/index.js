@@ -174,8 +174,7 @@ export default class Swipeable extends PureComponent {
     rightButtonsOpen: false
   };
 
-  constructor() {
-    super();
+  UNSAFE_componentWillMount() {
     const {onPanAnimatedValueRef, onRef} = this.props;
 
     onRef(this);
@@ -245,7 +244,7 @@ export default class Swipeable extends PureComponent {
   _handlePan = Animated.event([null, {
     dx: this.state.pan.x,
     dy: this.state.pan.y
-  }],  { useNativeDriver: true });
+  }]);
 
   _invertInRtl(value) {
     return this.props.isRTL ? -value : value;

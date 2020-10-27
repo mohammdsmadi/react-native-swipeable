@@ -147,7 +147,6 @@ export default class Swipeable extends PureComponent {
       toValue: {x: 0, y: 0},
       duration: 250,
       easing: Easing.elastic(0.5),
-      useNativeDriver: true, 
     },
 
     // misc
@@ -223,7 +222,6 @@ export default class Swipeable extends PureComponent {
       toValue: this._getAutoSwipeTargetPoint(type),
       duration: 250,
       easing: Easing.elastic(0.5),
-      useNativeDriver: true, 
     };
 
     this.setState({

@@ -1,6 +1,6 @@
 {
   "name": "react-native-swipeable-rtl",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "A powerful React Native swipe component",
   "main": "lib/index.js",
   "scripts": {
